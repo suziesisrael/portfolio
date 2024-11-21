@@ -1,13 +1,13 @@
 <!-- ⚠ Only works for website allowing CORS requests -->
 
 <main id="feed">
-  <a href="https://zapier.com/engine/rss/1437607/suzietest">
-    <h1>Suzie's Glorious RSS Reader</h1>
+  <a href="https://dev.to/geekgalgroks/building-an-rss-reader-in-javascript-1ep0">
+    <h1>Suzie.S Glorious RSS Reader</h1>
   </a>
 </main>
 
 <script>
-  fetch("https://dev.to/feed/gitlive")
+  fetch("https://zapier.com/engine/rss/1437607/suzietest")
   .then((response) => response.text())
   .then((str) => new window.DOMParser().parseFromString(str, "text/xml"))
   .then((data) => {
